@@ -42,6 +42,8 @@ Then plug the CP2102 to the USB port of upper computer, check if it's recognized
 
 ### Software Preparation
 
+Ensure `libudev` is installed. `sudo apt install libudev-dev`
+
 The SDK requires installed ROS, Ubuntu:18.04、16.04，ROS: Melodic、Kinetic are recommended.
 
 The whole process could be conducted with a normal user's account, however, the **authority of using the ttyUSB device is a necessity**.
