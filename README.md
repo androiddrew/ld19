@@ -35,6 +35,31 @@ If a inappropriate SDK is put into use, there won't be any abnormity but it just
 1. Read the section above then choose the proper version for your hardware.
 2. Please turn to the README contained in the directory of the version you chose for further instructions in detail.[PC_README](./PC_ROS_SDK/README_en.md),[SBC_README](./SBC_ROS_SDK/README_en.md)
 
+## Udev Rules
+
+
+## Launch Visualization
+
+Apply udev rule if you have not already done so. Permissions on the device need to be adjusted
+to read data. 
+
+From you catkin workspace root
+
+```
+roslaunch ldlidar ld19.launch
+```
+
+In a new new terminal
+```
+rosrun rviz rviz
+```
+
+Load config file `File > Open Config` Navigate to the `ldlidar.rviz` file.
+
+
+
+
+
 ## Notice
 
 LD19 is basically the same as LD06 in all aspects, so some manual books are based on LD06, please be aware of the contents that need modifying.
